@@ -3,7 +3,7 @@ import { env } from "$env/dynamic/private";
 
 
 const callbackURL = import.meta.env.PROD
-  ? "https://scribe-svelte.vercel.app//login/google/callback"
+  ? "https://scribe-svelte.vercel.app/login/google/callback"
   : "http://localhost:5173/login/google/callback";
 
 export const google = new Google(
